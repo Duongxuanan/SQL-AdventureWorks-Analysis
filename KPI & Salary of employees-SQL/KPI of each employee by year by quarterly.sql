@@ -26,7 +26,7 @@ EmployeeID,
 YEAR(KPI_Date) AS Year_,
 SUM(KPI) AS Total_KPI,
 SUM(Total_Sales) AS Total_Sales_Year,
-FORMAT(SUM(Doanh_Thu_Thuc_Te)/SUM(Chi_tieu),'P2') AS Perc_Year
+FORMAT(SUM(Total_Sales)/SUM(KPI),'P2') AS Perc_Year
 FROM table2
 GROUP BY 
 EmployeeID,
